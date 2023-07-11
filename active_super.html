@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img class="img" src="./img/Logo-White.svg" alt="">
+            </div>
+
+            <div class="navbar__nav-list">
+                <ul class="navbar__nav-items">
+                    <li>
+                        <a href="/">Activate</a>
+                    </li>
+                    <li>
+                        <a href="/">Buy Now</a>
+                    </li>
+                    <li>
+                        <a href="/">Sign Up</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-login">Login</button>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div>
+                <img class="img" src="/img/hero-bg.png" alt="">
+            </div>
+
+            <h2 class="heading2">Buy Now</h2>
+        </div>
+    </header>
+
+    <main>
+        <form class="mt-xl cart-form">
+            <div>
+                <h3 class="heading3 mb-sm">Order Supergood ID</h3>
+                <p class="">SuperGood ID is available in small (30mm, ~1.2") and large (35mm, 1.4"). Small is
+                    recommended for animals less than 25 pounds. Large is recommended for all animals
+                    greater than 25 pounds. Each SuperGood ID comes with a split ring to easily attach
+                    the tag to your pet's collar
+                </p>
+
+                <div class="mt-xs">
+                    <label class="label" for="email">Email</label>
+                    <input class="input mt-xs" type="text" id="email" placeholder="example@email.com" />
+                </div>
+
+                <div class="flex-1 mt-xs">
+                    <div class="full-width">
+                        <label class="label" for="pet-name">Pet Name</label>
+                        <input class="input mt-xs" type="text" id="pet-name" placeholder="Ex : Jark" />
+                    </div>
+
+                    <div class="full-width">
+                        <label class="label" for="size">Tag Size</label>
+                        <select class="input mt-xs" name="size" id="size">
+                            <option>Large</option>
+                            <option>Small</option>
+                        </select>
+                    </div>
+                </div>
+
+                <p class="heading5 mt-xs add-another-pet">Add Another Pet <span cl>+</span></p>
+            </div>
+
+            <div class="cart-details">
+                <h3 class="heading4 ">Cart Details</h3>
+                <div>
+                    <span>Total Number of Pet</span>
+                    <span>01</span>
+                </div>
+                <div>
+                    <span>Price per Pet</span>
+                    <span>$10/year</span>
+                </div>
+                <div>
+                    <span>Total Amount</span>
+                    <span>$10/year</span>
+                </div>
+                <div>
+                    <button class="btn full-width">Check Out</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img class="img" src="./img/Logo-White.svg" alt="">
+        </div>
+
+        <nav class="footer__nav">
+            <ul class="footer__nav-items">
+                <li>
+                    <a href="/">Activate</a>
+                </li>
+                <li>
+                    <a href="/">Buy Now</a>
+                </li>
+                <li>
+                    <a href="/">Get SuperGood ID</a>
+                </li>
+                <li>
+                    <a href="/">FAQs</a>
+                </li>
+                <li>
+                    <a href="/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <p class="rite">copyright © SuperGood ID 2023</p>
+    </footer>
+</body>
+
+</html>
