@@ -149,6 +149,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,6 +159,20 @@ body {
 
 .navbar__logo {
     width: 20rem;
+}
+
+.navbar__nav-button {
+    display: block;
+    z-index: 3000;
+    height: 5rem;
+    width: 5rem;
+
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    text-align: center;
 }
 
 .navbar__nav-list,
@@ -183,9 +198,13 @@ body {
 .homepage__hero {
     margin-top: 10rem;
     padding-bottom: 18rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-between; 
+    justify-items: center;
+    row-gap: 5rem;
 }
 
 .homepage__hero--heading1 {
@@ -473,4 +492,12 @@ body {
     width: max-content;
     margin: 0 auto;
     margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .homepage__hero {
+        grid-template-columns: repeat(auto-fit, minmax(0, 50rem));
+        justify-content: center;
+        
+    }
 }
