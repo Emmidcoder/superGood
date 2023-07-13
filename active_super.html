@@ -14,12 +14,12 @@
             <div class="navbar__logo">
                 <img class="img" src="./img/Logo-White.svg" alt="">
             </div>
-        
+
             <input type="checkbox" class="hidden navbar__nav-checkbox" id="checkbox">
             <label for="checkbox" class="hidden navbar__nav-button">
                 <span class=" navbar__nav-button--icon"></span>
             </label>
-        
+
             <div class="navbar__nav">
                 <div class="navbar__nav-list">
                     <ul class="navbar__nav-items">
@@ -33,7 +33,7 @@
                             <a href="/">Sign Up</a>
                         </li>
                     </ul>
-        
+
                     <button class="btn btn-login">Login</button>
                 </div>
             </div>
@@ -49,57 +49,59 @@
     </header>
 
     <main>
-        <form class="mt-xl cart-form">
-            <div>
-                <h3 class="heading3 mb-sm">Order Supergood ID</h3>
-                <p class="">SuperGood ID is available in small (30mm, ~1.2") and large (35mm, 1.4"). Small is
-                    recommended for animals less than 25 pounds. Large is recommended for all animals
-                    greater than 25 pounds. Each SuperGood ID comes with a split ring to easily attach
-                    the tag to your pet's collar
-                </p>
+        <section class="mt-xl px-sm">
+            <form class="cart-form">
+                <div class="cart-form__input">
+                    <h3 class="heading3 mb-sm">Order Supergood ID</h3>
+                    <p class="">SuperGood ID is available in small (30mm, ~1.2") and large (35mm, 1.4"). Small is
+                        recommended for animals less than 25 pounds. Large is recommended for all animals
+                        greater than 25 pounds. Each SuperGood ID comes with a split ring to easily attach
+                        the tag to your pet's collar
+                    </p>
 
-                <div class="mt-xs">
-                    <label class="label" for="email">Email</label>
-                    <input class="input mt-xs" type="text" id="email" placeholder="example@email.com" />
-                </div>
-
-                <div class="flex-1 mt-xs">
-                    <div class="full-width">
-                        <label class="label" for="pet-name">Pet Name</label>
-                        <input class="input mt-xs" type="text" id="pet-name" placeholder="Ex : Jark" />
+                    <div class="mt-xs">
+                        <label class="label" for="email">Email</label>
+                        <input class="input mt-xs" type="text" id="email" placeholder="example@email.com" />
                     </div>
 
-                    <div class="full-width">
-                        <label class="label" for="size">Tag Size</label>
-                        <select class="input mt-xs" name="size" id="size">
-                            <option>Large</option>
-                            <option>Small</option>
-                        </select>
+                    <div class="flex-1 mt-xs">
+                        <div class="full-width">
+                            <label class="label" for="pet-name">Pet Name</label>
+                            <input class="input mt-xs" type="text" id="pet-name" placeholder="Ex : Jark" />
+                        </div>
+
+                        <div class="full-width">
+                            <label class="label" for="size">Tag Size</label>
+                            <select class="input mt-xs" name="size" id="size">
+                                <option>Large</option>
+                                <option>Small</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="heading5 mt-xs add-another-pet">Add Another Pet <span>+</span></p>
+                </div>
+
+                <div class="cart-details">
+                    <h3 class="heading4 ">Cart Details</h3>
+                    <div>
+                        <span>Total Number of Pet</span>
+                        <span>01</span>
+                    </div>
+                    <div>
+                        <span>Price per Pet</span>
+                        <span>$10/year</span>
+                    </div>
+                    <div>
+                        <span>Total Amount</span>
+                        <span>$10/year</span>
+                    </div>
+                    <div>
+                        <button class="btn full-width">Check Out</button>
                     </div>
                 </div>
-
-                <p class="heading5 mt-xs add-another-pet">Add Another Pet <span cl>+</span></p>
-            </div>
-
-            <div class="cart-details">
-                <h3 class="heading4 ">Cart Details</h3>
-                <div>
-                    <span>Total Number of Pet</span>
-                    <span>01</span>
-                </div>
-                <div>
-                    <span>Price per Pet</span>
-                    <span>$10/year</span>
-                </div>
-                <div>
-                    <span>Total Amount</span>
-                    <span>$10/year</span>
-                </div>
-                <div>
-                    <button class="btn full-width">Check Out</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </section>
     </main>
 
     <footer class="footer mt-xl">
