@@ -44,7 +44,7 @@ body {
 }
 
 .mt-xl {
-    margin-top: 10rem;
+    margin-top: 10rem !important;
 }
 
 .mb-sm {
@@ -91,11 +91,15 @@ body {
     border-radius: 25px;
 }
 
-.flex {
-    display: flex;
+.grid-section {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26.55rem, 1fr));
     align-items: center;
     justify-content: center;
-    gap: 6rem;
+    gap: 3rem;
+    padding: 0 2rem;
 }
 
 .flex-1 {
@@ -111,10 +115,6 @@ body {
 .text-center {
     text-align: center;
     margin: 0 auto;
-}
-
-.form {
-    width: 40rem;
 }
 
 .form {
@@ -195,8 +195,6 @@ body {
     padding-bottom: 18rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-    /* display: flex; */
-    /* align-items: center; */
     justify-content: space-between;
     justify-items: center;
     row-gap: 5rem;
@@ -359,9 +357,12 @@ body {
     bottom: 10rem;
 }
 
-.activate--img,
+
+
+.activate__img,
 .info-form__img {
-    width: 45rem;
+    justify-self: center;
+    max-width: 45rem;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -402,7 +403,6 @@ body {
     max-width: 62rem;
     margin: 0 auto;
     font-size: 1.35rem;
-    /* font-weight: 600; */
 }
 
 .question {
@@ -427,9 +427,6 @@ body {
 .question__heading>:first-child {
     font-size: 1.6rem;
 }
-
-
-
 
 .email-dm {
     display: flex;
@@ -460,7 +457,6 @@ body {
 .footer {
     background-color: var(--color-primary);
     padding: 3rem 0 2rem;
-    margin-top: 10rem;
 }
 
 .footer__logo {
@@ -511,19 +507,6 @@ body {
     .navbar {
         position: relative;
     }
-
-    /* test */
-    /* test */
-    .bg {
-        background-color: chartreuse;
-    }
-
-    .bg2 {
-        background-color: rgb(100, 152, 197);
-    }
-
-    /* test */
-    /* test */
 
     .overlay {
         position: fixed;
@@ -632,13 +615,13 @@ body {
     .cta-section {
         padding: 3rem;
     }
-
-    /* .cta-section{
-        flex-direction: column-reverse;
-    } */
 }
 
 @media only screen and (max-width: 760px) {
+    .mt-xl {
+        margin-top: 5rem !important;
+    }
+
     .heading2 {
         font-size: 3rem;
     }
@@ -723,6 +706,7 @@ body {
     .navbar__nav {
         width: 45vw;
     }
+
     .navbar__logo {
         width: 13rem;
     }
@@ -742,5 +726,15 @@ body {
 
     .cathegories__item-figure {
         font-size: 3rem;
+    }
+
+    .activate__heading {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .activate__img,
+    .info-form__img {
+        grid-row: 1/2;
     }
 }
